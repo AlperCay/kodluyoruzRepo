@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  color: blue;
+}
+
+a:active {
+  color: -webkit-activelink;
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+section {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.search-wrapper input {
+  width: 345px;
+  height: 21px;
+  border: 1px solid;
+  border-style: inset;
+  border-color: #61616180;
+}
+
+#search-btn,
+#lucky-btn {
+  padding: 1px 6px;
+}
+
+footer {
+  width: 90%;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 76px;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.footer-wrapper ul {
+  list-style-type: none;
+}
+
+#footer-links-1,
+#footer-links-2,
+#footer-links-3 {
+  height: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+#footer-links-1 {
+  background-color: rgb(126, 229, 218);
+  width: 37%;
+  font: 16px "Times New Roman", Times, serif;
+  margin-right: 1px;
+  padding: 10px;
+}
+
+#footer-links-2 {
+  background-color: rgb(112, 204, 194);
+  width: 19%;
+  font: 13px "Times New Roman", Times, serif;
+  margin-left: 1px;
+}
+
+#footer-links-3 {
+  background-color: rgb(98, 179, 170);
+  width: 44%;
+  font: 13px "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1px;
+}
+
+#footer-links-3 input {
+  width: 185px;
+  height: 21px;
+  padding: 1px 2px;
+}
+
+#footer-links-3 input::placeholder {
+  color: #000;
+}
+
+#newsletter-btn {
+  margin-right: 10px;
+  padding: 1px 6px;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 16px auto;
+  font: 13px "Times New Roman", Times, serif;
+}
