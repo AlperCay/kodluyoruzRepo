@@ -1,0 +1,26 @@
+.day {
+    background: url("./images/daylight.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  .night {
+    background: url("./images/night.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+  }
+  h1 {
+    text-transform: capitalize;
+  }
+  .wrapper {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px #939393, inset 0px -20px 20px 0px #9d9d9d75;
+  }
+  .card{
+    box-shadow: 0px 0px 20px 10px #00000073;
+  }

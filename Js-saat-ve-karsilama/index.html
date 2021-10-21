@@ -12,35 +12,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <style>
-      .day {
-        background: url("./images/daylight.jpg") no-repeat center center;
-        background-size: cover;
-      }
-      .night {
-        background: url("./images/night.jpg") no-repeat center center;
-        background-size: cover;
-        color: #fff;
-      }
-      h1 {
-        text-transform: capitalize;
-      }
-      .wrapper {
-        width: 50%;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        border-radius: 20px;
-        box-shadow: 0px 0px 10px 5px #939393, inset 0px -20px 20px 0px #9d9d9d75;
-      }
-      .card{
-        box-shadow: 0px 0px 20px 10px #00000073;
-      }
-    </style>
-
+    <link rel="stylesheet" href="./style.css">
     <title>JavaScript Saat ve Karşılama</title>
   </head>
   <body>
@@ -50,13 +22,13 @@
           <div class="wrapper">
             <h3 class="p-3">Kodluyoruz JS Browser Welcome Page</h3>
             <h1></h1>
-            <p class="fs-2"></p>
+            <p class="fs-2 font-monospace"></p>
             <p></p>
           </div>
         </div>
       </div>
       <div class="row mt-5 pt-5">
-        <div class="col-4 d-flex justify-content-center">
+        <div class="col-md-3 offset-md-2 mb-5 d-flex justify-content-center">
           <div class="card w-75">
             <img
               src="https://picsum.photos/id/22/200/200"
@@ -65,12 +37,12 @@
             />
             <div class="card-body">
               <p class="card-text text-dark text-center">
-                Lorem ipsum dolor sit.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nam necessitatibus ratione aspernatur doloribus voluptas nostrum reprehenderit accusantium soluta odio.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-4 d-flex justify-content-center">
+        <div class="col-md-3 mb-5 d-flex justify-content-center">
           <div class="card w-75">
             <img
               src="https://picsum.photos/id/21/200/200"
@@ -79,12 +51,12 @@
             />
             <div class="card-body">
               <p class="card-text text-dark text-center">
-                Lorem ipsum dolor sit amet consectetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fugit aliquid aliquam in. Laboriosam autem repellendus, fuga consectetur esse quo dolor suscipit qui totam enim!
               </p>
             </div>
           </div>
         </div>
-        <div class="col-4 d-flex justify-content-center">
+        <div class="col-md-3 mb-5 d-flex justify-content-center">
           <div class="card w-75">
             <img
               src="https://picsum.photos/id/23/200/200"
@@ -93,40 +65,14 @@
             />
             <div class="card-body">
               <p class="card-text text-dark text-center">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur error, dolore magni dicta tempora.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <script>
-      let name = prompt("Lütfen adınızı giriniz");
-      let greeting = "";
-      let getHour = new Date().getHours();
-      
-
-      if (getHour > 6 && getHour < 18) {
-          greeting = "İyi günler";
-          document.getElementById("main").classList.add("day");
-        } else {
-          greeting = "İyi geceler";
-          document.getElementById("main").classList.add("night");
-      }
-      document.querySelector("h1").innerHTML = name
-        ? `${greeting}, ${name}`
-        : `${greeting}, ziyaretçi`;
-
-      function startTime() {
-        const currentTime = new Date();
-        document.querySelector("p").innerHTML =
-          currentTime.toLocaleTimeString("tr-TR");
-        setTimeout(startTime, 1000);
-      }
-      startTime();
-    </script>
-
+<script src="./script.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
